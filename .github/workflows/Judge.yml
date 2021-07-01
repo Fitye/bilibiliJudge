@@ -6,11 +6,11 @@ on:
     types: [published]
   push:
     tags:
-    - 'v*'
+    - 'v*'    
   #  branches: 
   #    - master
   schedule:
-    - cron: "0 4-14 * * *" # 早上十二点到晚上十点每小时一次
+    - cron: "0 0-24 * * *" # 全天运行
   watch:
     types: [started]
    
